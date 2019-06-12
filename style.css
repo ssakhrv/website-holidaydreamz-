@@ -1,0 +1,491 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size:100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 2;
+}
+ol, ul {
+  list-style: none;
+
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*Додавання шрифтів*/
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url("fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Roboto-Light";
+	src: url("fonts/Roboto-Light.ttf") format("truetype");
+}
+.main, .work, .partners, .ideas, .search {
+	padding: 0 200px;
+}
+header {
+	background-image: url(images/Main.png);
+	width: 1400px;
+	height: 650px;
+	margin-bottom: 100px;
+}
+header h4 {
+	font-family: "Montserrat-Bold";
+	font-size: 24px;
+	color: #FFEFD5;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-top: 50px;
+}
+.sing_in, .log_in {
+	font-family: "Montserrat-Bold";
+	font-size: 14px;
+	color: #FFFFCC;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.log_in {
+	margin-top: 50px;
+	border: 2px solid #ffffff;
+	padding: 10px 20px;
+	border-radius: 40px;
+}
+.sing_in {
+	margin-top: 50px;
+	border: 2px solid #ffffff;
+	padding: 10px 20px;
+	border-radius: 40px;
+}
+.sing_in:hover, .log_in:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+.main h1 {
+	padding-top: 180px;
+	font-family: "Montserrat-Bold";
+	font-size: 55px;
+	color: #FFEFD5;
+	text-transform: uppercase;
+	text-align: center;
+}
+.main h3 {
+	font-family: "Roboto-Light";
+	font-size: 25px;
+	color: #FFEFD5;
+	text-align: center;
+	margin: 10px 0;
+	
+}
+.find_h {
+	background-color: #FF3366;
+	color: #ffffff;
+}
+.find_h, .partners a {
+	font-family: "Montserrat-Bold";
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	width: 225px;
+	border-radius: 30px;
+	padding: 10px 0; 
+	margin-left: 357.5px;
+	display: block;
+}
+.partners a{
+	border: 2px solid #ff4e50;
+	color: #ff4e50;
+}
+.partners a:hover {
+	text-decoration: none;
+	color: #ff4e50;
+}
+.find_h:hover {
+	text-decoration: none;
+	color: #ffffff;
+
+}
+.partners h3, .work h3, .ideas h3, .search h3 {
+	font-family: "Montserrat-Bold";
+	font-size: 22px;
+	margin-bottom: 35px;
+	text-align: center;
+	color: #333333;
+}
+.step {
+	height: 400px;
+	border-radius: 4px;
+}
+.step.s_first {
+	background: url(images/Left_rrow.png) 10% 45% no-repeat, url(images/Right_arrow.png) 84% 45% no-repeat, url(images/Step1.png) no-repeat;
+}
+.step.s_second {
+	background: url(images/Left_rrow.png) 10% 45% no-repeat, url(images/Right_arrow.png) 84% 45% no-repeat, url(images/Step2.png) no-repeat;
+}
+.step.s_third {
+	background: url(images/Left_rrow.png) 10% 45% no-repeat, url(images/Right_arrow.png) 84% 45% no-repeat, url(images/Step3.png) no-repeat;
+}
+.first_b, .third_b {
+	margin-top: 77%;
+}
+.second_b {
+	margin-top: 85%;
+}
+.work {
+	margin-bottom: 100px;
+	width: 1440px;
+}
+.step a {
+	background-color: #ff4e50;
+	color: #ffffff;
+	font-family: "Montserrat-Regular";
+	font-size: 10px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	width: 70px;
+	border-radius: 15px;
+	padding: 5px 0; 
+	letter-spacing: .2em;
+	margin-left: 20px;
+	display: block;
+}
+.step a:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+.step h2 {
+	font-family: "Montserrat-Bold";
+	font-size: 24px;
+	color: #ffffff;
+	margin: 10px;
+}
+.step_text {
+    font-family: "Roboto-Light";
+	font-size: 14px;
+	color: #cccccc;
+	margin: 0 20px 20px 20px;
+}
+.partners {
+	margin-bottom: 100px;
+	width: 1440px;
+}
+.first_partner, .second_partner, .third_partner, .fourth_partner {
+	height: 240px;
+}
+.first_partner {
+	background: url(images/tv.png) 72% 42% no-repeat, url(images/red_ring.png) 75% 42% no-repeat, url(images/Bradley.png) 50% 0% no-repeat;
+}
+.second_partner{
+	background: url(images/coffe.png) 72% 42% no-repeat, url(images/green_ring.png) 75% 42% no-repeat, url(images/Heather.png) 50% 0% no-repeat;
+}
+.third_partner {
+	background: url(images/flask.png) 72% 42% no-repeat, url(images/orange_ring.png) 75% 42% no-repeat, url(images/Lucas.png) 50% 0% no-repeat;
+}
+.fourth_partner {
+	background: url(images/Airplane.png) 72% 42% no-repeat, url(images/blue_ring.png) 75% 42% no-repeat, url(images/Bradley_girl.png) 50% 0% no-repeat;
+}
+.partners a {
+	margin-top: 35px;
+}
+.partner{
+	text-align: center;
+	width: 220px;
+}
+.partner h4 {
+	font-family: "Montserrat-Bold";
+	font-size: 14px;
+	color: #333333;
+	margin-bottom: 20px; 
+	margin-top: 65%;
+}
+.partner p {
+	font-family: "Roboto-Light";
+	font-size: 14px;
+	color: #666666;
+}
+.ideas {
+	width: 1440px;
+	margin-bottom: 100px;
+}
+.idea {
+	height: 310px;
+	border-radius: 4px;
+}
+.idea h2 {
+	font-family: "Montserrat-Bold";
+	font-size: 22px;
+	text-align: center;
+	color: #ffffff;
+}
+.first h2, .second h2, .third h2, .fourth h2, .seventh h2 {
+	padding-top: 50%;
+}
+.idea.first{
+	background: url(images/Sport.png) no-repeat;
+}
+.idea.second {
+	background: url(images/health.png) no-repeat;
+}
+.idea.third {
+	background: url(images/Extreme_sport.png) no-repeat;
+	margin-bottom: 20px;
+}
+.idea.fourth {
+	background: url(images/Games.png) no-repeat;
+}
+.fifth h2, .sixth h2{
+	padding-top: 23%;
+}
+.idea.fifth {
+	background: url(images/Culture.png) no-repeat;
+	margin-bottom: 20px;
+}
+.idea.sixth {
+	background: url(images/Relaxation.png) no-repeat;
+}
+.idea.seventh {
+	background: url(images/Travelling.png) no-repeat;
+}
+.search{
+	margin-bottom: 100px;
+	width: 1440px;
+}
+.sub-butt{
+	display: inline-block;
+	 width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ff4e50;
+    border: 1px solid #ff4e50;
+    font-size: 14px;
+    font-family: "Montserrat-Bold";
+    color: #ffffff;
+    font-weight: 300;
+}
+#interests {
+	width: 240px;
+	height: 40px;
+	display: inline-block;
+	font-family: "Roboto-Light";
+	font-size: 14px;
+    box-shadow: 0 1px 0 #eeeeee;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    padding-left: 16px;
+    color: #999999;
+    margin-left: 265px;
+    margin-right: 10px;    
+}
+.search h5{
+	font-family: "Roboto-Light";
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+hr {
+	border-width: 4px;
+	background-color: #ff4e50;
+	color: #ff4e50;
+	height: 4px;
+	width: 1440px;
+	margin: 0;
+}
+footer{
+	padding: 35px 250px 0px 250px;
+	position: relative;
+}
+footer h4{
+	font-family: "Montserrat-Bold";
+	font-size: 16px;
+	color: #ff4e50;
+	text-transform: uppercase;
+} 
+.com_part {
+	font-family: "Montserrat-Bold";
+	font-size: 14px;
+	color: #333333;
+	margin-bottom: 20px;
+}
+li a {
+	font-family: "Roboto-Light";
+	font-size: 14px;
+	text-decoration: none;
+	color: #666666;
+	line-height: 24px;
+}
+#des {
+	font-family: "Montserrat-Bold";
+	font-size: 10px;
+	color: #cccccc;
+	text-transform: uppercase;
+}
+.img-right {
+	position: absolute;
+	bottom: 108px;
+	left: 970px;
+   margin: 0 0 10px 20px;
+   padding: 0;
+   float: right;
+}
+@media (max-width: 321px){
+	.main, .work, .partners, .ideas, .search, footer {
+	padding: 15px;
+}
+header {
+	background-size: cover;
+	background-image: url(images/Main.png) no-repeat;
+	width: auto;
+	height: auto;
+	margin-bottom: 20px;
+}
+header h4 {
+	font-size: 15px;
+	margin-top: 13px;
+	letter-spacing: .01em;
+}
+.sing_in, .log_in {
+	font-size: 12px;
+	padding: 5px 8px;
+	margin-top: 10px;
+}
+.main h1 {
+	padding-top: 50px;
+	font-size: 35px;
+}
+.main h3 {
+	font-size: 15px;
+	margin: 20px 0;
+}
+.find_h, .partners a {
+	margin: auto;
+	font-size: 10px;
+	width: 150px;
+	padding: 10px 0; 
+}
+.partners {
+	width: auto;
+}
+.partners h3, .work h3, .ideas h3, .search h3 {
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+.work {
+	margin: auto;
+	width: 300px;
+}
+.step {
+	margin-bottom: 20px;
+}
+.first_b, .third_b {
+	margin-top: 85%;
+}
+.second_b {
+	margin-top: 95%;
+}
+.step h2 {
+	font-size: 20px;
+	margin: 10px;
+}
+.step_text {
+	font-size: 15px;
+	margin: 0 7px 7px 7px;
+}
+.partners {
+	margin-bottom: 20px;
+}
+.first_partner {
+	background: url(images/tv.png) 64% 42% no-repeat, url(images/red_ring.png) 65% 41% no-repeat, url(images/Bradley.png) 50% 0% no-repeat;
+}
+.second_partner{
+	background: url(images/coffe.png)64% 42% no-repeat, url(images/green_ring.png) 65% 41% no-repeat, url(images/Heather.png) 50% 0% no-repeat;
+}
+.third_partner {
+	background: url(images/flask.png) 64% 42% no-repeat, url(images/orange_ring.png) 65% 41% no-repeat, url(images/Lucas.png) 50% 0% no-repeat;
+}
+.fourth_partner {
+	background: url(images/Airplane.png) 64% 42% no-repeat, url(images/blue_ring.png) 65% 41% no-repeat, url(images/Bradley_girl.png) 50% 0% no-repeat;
+}
+.partner h4 {
+	margin-bottom: 20px; 
+	margin-top: 38%;
+}
+.ideas {
+	width: 300px;
+	margin: auto;
+}
+.idea {
+	margin-bottom: 20px;
+}
+.idea.fifth {
+	background: url(images/Culture.png) no-repeat;
+	background-size: contain;
+	height: 150px;
+}
+.idea.sixth {
+	background: url(images/Relaxation.png) no-repeat;
+	background-size: contain;
+	height: 150px;
+}
+.search{
+	width: auto;
+	margin: auto;
+}
+#interests {
+	margin: 20px auto;
+	display: block;
+}
+.sub-butt{
+	display: block;
+	margin: auto;
+}
+footer{
+	width: auto;
+}
+hr {
+	width: auto;
+}
+.img-right {
+	position: static;
+   margin: 0 0 10px 20px;
+   padding: 0;
+   float: right;
+}
+}
